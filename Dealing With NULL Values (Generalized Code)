@@ -1,0 +1,9 @@
+Dealing with Null Values:
+  
+  mean_age_data = math.ceil(np.mean(data['Age']))
+  count = 0
+  for i in range(len(data)):
+   if data.Age.isnull()[i] == True:
+     count = count + 1
+     data.Age[i] = mean_age_data
+  print(count)
