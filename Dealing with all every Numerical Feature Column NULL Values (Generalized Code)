@@ -1,0 +1,12 @@
+ ## Dealing with Null Numerical Values For The whole dataframe 
+ ## This code will automatically feed all the NaN values with thier feature mean value and
+ ## is applicable for entire dataframe you will have to execute it only once   
+ 
+ for j in range(len(data.columns)):
+  if data[data.columns[j]].dtypes == 'float64' or 'int64' and not 'Object':
+    print(j)
+    for i in range(len(data)):
+      if data[data.columns[j]].isnull()[i] == True:
+        mean = math.ceil(np.mean(data[data.columns[j]]))
+        #mean = mean.astype(int)
+        data[data.columns[j]][i] = mean
