@@ -1,0 +1,27 @@
+import math 
+import pandas as pd
+import numpy as np 
+
+ ## Trying to handle Null Values for Categorical Data as well as Numerical Values
+ for j in range(len(data.columns)):  # j iterates over different columns
+  if data[data.columns[j]].dtypes == 'float64' or 'int64' or 'object':
+    print('j = ', j) # just a confirmation of the code to be right
+
+    # first checking for the Categorical and Ordinal Features
+    if data[data.columns[j]].dtypes == 'object':
+      s = dict(data[data.columns[j]].value_counts())
+      key_list = list(s.keys())
+      value_list = list(s.values())
+      v = value_list[0]
+      kl = key_list[value_list.index(v)]
+      for i in range(len(data)):  # i iterates over a particular column values
+        if data[data.columns[j]].isnull()[i] == True:
+          data[data.columns[j]][i] = v
+    
+    # Now checking for the Numerical Values 
+    elif data[data.columns[j]].dtypes == 'float64' or 'int64':
+        for i in range(len(data)):
+          if data[data.columns[j]].isnull()[i] == True:
+            mean = math.ceil(np.mean(data[data.columns[j]]))
+            #mean = mean.astype(int)
+            data[data.columns[j]][i] = mean
