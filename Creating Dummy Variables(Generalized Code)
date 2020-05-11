@@ -1,0 +1,13 @@
+Dummy Variables(for Numerical values):
+  
+  col = 'Pclass'
+  for i in range(len(data[col].unique())):
+   fs = "{}{}".format(col, i)
+   data[fs] = 0
+   #print('i = ', i)
+   for j in range(len(data[col])):
+     if data[col][j] == data[col].unique()[i]:
+       data[fs][j] = data[col].unique()[i]
+     else:
+       data[fs][j] = 0
+     #print('j = ', j)
