@@ -10,15 +10,15 @@ Data Description:
 
 1. ID: Unique ID for the customer
 2. Policy Start Date: Date policy started
-Policy End Date: Date policy ended
-Gender: Gender of the customer
-Age: Age of the customer
-ProductName: Name of Insurance policy
-First Transaction Date: First date payment was made
-No_Pol: Number of policies the customer has
-Car_Category: Type of car
-Subject_Car_Colour: Car colour
-Subject_Car_Make: Car make
-LGA_Name: City where policy was purchased
-State: State where policy was purchased
-No_of_claims_3_mon_period: Wether the customer claimed within a 3 month period.
+3. Policy End Date: Date policy ended
+4. Gender: Gender of the customer
+5. Age: Age of the customer
+6. ProductName: Name of Insurance policy
+7. First Transaction Date: First date payment was made
+8. No_Pol: Number of policies the customer has
+9. Car_Category: Type of car
+10. Subject_Car_Colour: Car colour
+11. Subject_Car_Make: Car make
+12. LGA_Name: City where policy was purchased
+13. State: State where policy was purchased
+14. No_of_claims_3_mon_period: Wether the customer claimed within a 3 month period.
