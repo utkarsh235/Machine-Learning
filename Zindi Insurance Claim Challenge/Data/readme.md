@@ -8,8 +8,8 @@ The objective of this hackathon is to develop a predictive model that determines
 
 Data Description: 
 
-ID: Unique ID for the customer
-Policy Start Date: Date policy started
+1. ID: Unique ID for the customer
+2. Policy Start Date: Date policy started
 Policy End Date: Date policy ended
 Gender: Gender of the customer
 Age: Age of the customer
