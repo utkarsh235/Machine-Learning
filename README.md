@@ -1,7 +1,7 @@
 # Machine-Learning
 This Repository consist of all my Learings and some Projects that I worked on in Machine Learning Domain.
-🔹 If you are starting with machine learning / deep learning and get a new dataset to work on, there are a few things you must always take care of:
-🔹 Look at the data carefully, do EDA.
+ - 🔹 If you are starting with machine learning / deep learning and get a new dataset to work on, there are a few things you must always take care of:
+ - 🔹 Look at the data carefully, do EDA.
 🔹 Look at the targets. See how they are distributed & what kind of problem this is. 
 🔹 Choose the right metric to evaluate your models.
 🔹 Split the data into folds. You can use this for cross-validation or for hold out based validation.
