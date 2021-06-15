@@ -1,3 +1,5 @@
+Code: The code Document of the System can be found on: https://www.kaggle.com/utkarshg007/disaster-management-system-with-4-categories
+
 **High-Level Overview:** This work focuses on building a system which predicts natural disasters from Images/Videos. 
 Given Images/Videos of Natural Disaster to the system, the system predicts which disaster has occured.
 
