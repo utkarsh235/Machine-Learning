@@ -24,3 +24,5 @@ as loss function. The activation function in the final layer is Softmax and no p
 of the proposed model. Since the dataset was balanced, we took accuracy score as our evaluation metric. Hyperparameter Optimization
 was also performed on the Model to improve It’s accuracy. Learning rate, Batch Size and Number of epochs were tuned for Hyperparameter
 optimization and then the best possible model was proposed. 
+
+**Model Deployment:** This Disaster management system has been deployed for the end user to classify any image or video into the above mentioned categories on a Localhost Streamlit web application. Under the hood, As soon as a user uploades a file to the Web UI, the code underneath parses the image/video to it's corresponding constituents and the trained Machine learning model makes it's predictions on these smaller subsets and then accumulates the final results by a majority voting algorithm to putput final predictions. 
